@@ -26,6 +26,8 @@ const bytecode = JSON.parse(`{
   "sourceMap": "67:108:0:-:0;;;;;;;;;;;;;;;;;;;"
 }`);
 
+// ok
+
 const signer = (new ethers.providers.Web3Provider( provider.provider() ) ).getSigner();
 
 const factory = new ethers.ContractFactory(abi, bytecode.object, signer);
